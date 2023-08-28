@@ -1,0 +1,101 @@
+/*! root  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+
+/* ! body  */
+body{
+    background: #000 url(b.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
+}
+
+.container{
+position: absolute;
+top :30px;
+left: 40px;
+right: 40px;
+bottom: 30px;
+background: url(b.jpg);
+background-size: cover;
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-shadow: 0 50px 50px rgba(0,0,0,0.5), 0 0 0 100px rgba(0,0,0,0.2);
+}
+
+.container h2{
+    text-align: center;
+    font-size: 9em;
+    line-height: 0.8em;
+    color: #333;
+    margin-top:-100px;
+}
+
+.container h2 span{
+    display: block;
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-size: 0.22em;
+}
+
+.countdown{
+    display:flex;
+    margin-top: 50px;
+}
+
+.countdown div{
+    position: relative;
+    width: 70px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background:#333;
+    color:#fff;
+    margin: 0 15px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+/*
+!   countdown
+*/
+.countdown div:before{
+content: '';
+position: absolute;
+bottom: -45px;
+left: 0;
+width: 100%;
+height: 38px;
+background: #ff0;
+color:#333fff;
+font-size: 0.47em;
+line-height:38px;
+font-weight: 300;
+}
+
+.countdown #day:before{
+content: 'Days';
+}
+
+.countdown #hour:before{
+content: 'Hours';
+}
+
+.countdown #minute:before{
+content: 'Minutes';
+}
+
+.countdown #second:before{
+content: 'Seconds';
+}
+
+/* .countdown #ms:before
+{
+content: 'M-S';
+} */
